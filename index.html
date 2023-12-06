@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: rgb(158, 134, 0); */
+            width: 100%;
+        }
+         html{
+            scroll-behavior: smooth;
+        }
+        nav {
+            height: 70px;
+            width: 100%;
+            /* background-image: radial-gradient(circle,black ); */
+            display: flex;
+            /* backdrop-filter: blur(8px); */
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            z-index: 1000;
+        }
+        nav .nav-items{
+            margin-top: 10px;
+            position: absolute;
+            right: 20px;
+        }
+        .nav-items a{
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 15px 5px;
+            color:black;
+            display: inline;
+            font-weight: 400;
+        }
+        .nav-items:hover a{
+            filter: blur(1px);
+        }
+        /* .nav-items a:hover{
+            color: snow;
+            filter: blur(0px);
+        }*/
+         img{
+            margin-left: 250px;
+            height: 500px;
+            width: 1000px;
+            margin-top: 100px;
+        }
+        .home{
+            background: url(https://img.freepik.com/free-photo/flooring-white-space-scene-desk_1258-259.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            top: 0px;
+        }
+        h2{
+            display: inline;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: deepskyblue;
+            
+
+        }
+        h2:hover{
+            color: royalblue;
+        }
+        .recent {
+            display: flex;
+            flex-wrap: wrap;
+            background: url(https://img.freepik.com/free-photo/flooring-white-space-scene-desk_1258-259.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            top: 700px;
+            width: 100%;
+        }
+        .recent-image img{
+            margin: 5PX;
+            height: 250px;
+            width: 230px;
+            border: 3px rgb(15, 64, 155) solid;
+            justify-content:space-evenly
+
+        }
+        .recent-image img:hover{
+            transform: scale(1.2);
+            transition: all, 3s ease-in-out;
+            border-radius: 10px;
+        }
+        .story{
+            display: flex;
+            flex-wrap: wrap;
+            background: url(https://img.freepik.com/free-photo/flooring-white-space-scene-desk_1258-259.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            top: 1400px;
+            width: 100%;
+        }
+        .story-image img{
+            margin: 5PX;
+            height: 250px;
+            width: 230px;
+            border: 3px rgb(15, 64, 155) solid;
+            justify-content: space-around;
+
+
+        }
+        .story-image img:hover{
+            transform: scale(1.2);
+            transition: all, 3s ease-in-out;
+            border-radius: 10px;
+        }
+        .histry{
+            display: flex;
+            flex-wrap: wrap;
+            background: url(https://img.freepik.com/free-photo/flooring-white-space-scene-desk_1258-259.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            top: 2100px;
+        }
+        .histry-image img{
+            margin: 5PX;
+            height: 250px;
+            width: 230px;
+            border: 3px rgb(15, 64, 155) solid;
+            justify-content: space-around;
+
+
+        }
+        .histry-image img:hover{
+            transform: scale(1.2);
+            transition: all, 3s ease-in-out;
+            border-radius: 10px;
+        }
+        .information{
+            background: url(https://img.freepik.com/free-photo/flooring-white-space-scene-desk_1258-259.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            width: 100%;
+            position: absolute;
+            font-size: 30px;
+            top: 2800px;
+            
+
+        }
+        .contact{
+            background: url(https://img.freepik.com/free-photo/flooring-white-space-scene-desk_1258-259.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            width: 100%;
+            position: absolute;
+            font-size: 30px;
+            top: 3500px;
+            
+
+        }
+     .ap1{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+                </div>
+        <div class="nav-items">
+            <a href="#home">Home</a>
+            <a href="#res">Recent books</a>
+            <a href="#sto">Story books</a>
+            <a href="#his">History</a>
+            <a href="#info">Info</a>
+            <a href="#cont">contact</a>
+            
+        </div>
+    </nav>
+    <!-- home start -->
+    <div class="home" id="home">
+        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+        </div>
+        <!-- home end -->
+        <!-- recent section start -->
+        <div class="recent" id="res">
+            <h1>Recent books</h1>
+            <div class="recent-image">
+          <p align="center">
+            <img src="t1.jpg" alt=""  class="">
+            <img src="t2.jpg" alt=""  class="">
+            <img src="t3.jpg" alt=""  class="">
+            <img src="t4.jpg" alt=""  class="">
+            <img src="t5.jpg" alt=""  class="">
+            <img src="t6.jpg" alt=""  class="">
+            <img src="t7.jpg" alt=""  class="">
+            <img src="t8.jpg" alt=""  class="">
+            <img src="t9.jpg" alt=""  class="">
+            <img src="t10.jpg" alt=""  class="">
+          </p>
+                
+            </div>
+          </div>
+        <!-- recent section end -->
+        <!-- story section start -->
+        <div class="story" id="sto">
+            <!-- <h1></h1> -->
+            <h1 >Story books</h1>
+            <div class="story-image">
+                <p align="center"> 
+                <img src="k1.jpg" alt="" class="">
+                <img src="k2.jpg" alt="" class="">
+                <img src="k3.jpg" alt="" class="">
+                <img src="k4.jpg" alt="" class="">
+                <img src="k5.jpg" alt="" class="">
+                <img src="k6.jpg" alt="" class="">
+                <img src="k7.jpg" alt="" class="">
+                <img src="k8.jpg" alt="" class="">
+                <img src="k9.jpg" alt="" class="">
+                <img src="k10.jpg" alt="" class="">
+                </p>
+                
+            </div>
+          </div>
+        <!-- story section end -->
+        <!-- histry section start -->
+        <div class="histry" id="his">
+            <!-- <h1></h1> -->
+            <h1> History</h1>
+           
+            <div class="histry-image">
+               <p align="center">
+                <img src="h1.jpg" alt="">
+                <img src="h2.jpg" alt="">
+                <img src="h3.jpg" alt="">
+                <img src="h4.jpg" alt="">
+                <img src="h5.jpg" alt="">
+                <img src="h6.jpg" alt="">
+                <img src="h7.jpg" alt="">
+                <img src="h8.jpg" alt="">
+                <img src="h9.jpg" alt="">
+                <img src="h10.jpg" alt="">
+               </p>
+                
+            </div>
+          </div>  
+        <!-- histry section end -->
+        <!-- information start -->
+        <div class="information" id="info">
+            <h1>Info</h1><br>
+            <h2 style="color: white; text-shadow: 0px 5px 5px black;">Benifits of Reading Books</h2><br><br>
+            <div class="ben" style="color:indigo;">
+                <b style="color:red;">Self Improvement</b>: Reading helps you develop positive thinking. Reading is important because it develops your mind and gives you excessive knowledge and lessons of life. It helps you understand the world around you better. It keeps your mind active and enhances your creative ability.<br><br>
+                <b style="color:red;">Communication Skills</b>:Reading improves your vocabulary and develops your communication skills. It helps you learn how to use your language creatively. Not only does it improve your communication but it also makes you a better writer. Good communication is important in every aspect of life.<br><br> 
+                <b style="color: red;">Increases Knowledge</b>: Books enable you to have a glimpse into cultures, traditions, arts, history, geography, health, psychology and several other subjects and aspects of life. You get an amazing amount of knowledge and information from books.
+            </div>
+        </div>
+
+        <!-- information end -->
+        <!-- cont start  -->
+         <div class="contact" id="cont" >
+            <h1>contact</h1>
+            <p style="color:indigo;">Reading is a very good habit that one needs to develop in life. Good books can inform you, enlighten you and lead you in the right direction. There is no better companion than a good book. Reading is important because it is good for your overall well-being. Once you start reading, you experience a whole new world. When you start loving the habit of reading you eventually get addicted to it. Reading develops language skills and vocabulary. Reading books is also a way to relax and reduce stress. It is important to read a good book at least for a few minutes each day to stretch the brain muscles for healthy functioning</p>
+            <!-- <div class="p1"> -->
+                <a href="https://www.facebook.com/"><img class="ap1"  src="f1.jfif" alt="" height="100px" width="100px"></a>
+                <a  href="https://www.instagram.com/"><img  class="ap1" src="i1.jfif" alt="" height="100px" width="100px"></a>
+                <a  href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img  class="ap1" src="t1.png" alt="" height="100px" width="100px"></a>
+                <a  href="https://www.whatsapp.com/"><img  class="ap1"  src="w1.jfif" alt="" height="100px" width="100px"></a>
+                <div class="mar"><marquee behavior="alternate" direction="">Thank you for Visiting</marquee></div> 
+            <!-- </div>  -->
+        </div> 
+        <!-- cont end-->
+
+
+        </body>
+        </html>
